@@ -1,0 +1,27 @@
+:host {
+  .modal {
+    display: flex;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: rgba(#000, 0.3);
+  }
+  .modal-close {
+    float: right;
+  }
+  .modal-header {
+    overflow: hidden;
+  }
+  .modal-dialog {
+    box-shadow: 0 2px 5px rgba(#000, 0.3);
+    border-radius: 2px;
+    max-width: 600px;
+    padding: 15px;
+    background: #fff;
+    margin: auto;
+  }
+}

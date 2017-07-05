@@ -1,3 +1,25 @@
-<h1>
-  {{title}}
-</h1>
+<div class="app-wrap">
+  <main class="main">
+    <aside class="sidebar">
+      <button (click)="modal1.openPopup();">test 1</button>
+      <app-modal #modal1>
+        <div class="modal-title">title 1</div>
+        <div class="modal-content">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur corporis harum inventore, obcaecati officia totam veniam voluptas! Accusantium animi blanditiis, cumque nobis odit quam quisquam repellendus sunt tenetur ut!</p>
+        </div>
+      </app-modal>
+    </aside>
+    <section class="content">
+      <button (click)="modal2.openPopup();">test 2</button>
+      <app-modal #modal2>
+        <div class="modal-title">title 2</div>
+        <div class="modal-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum enim mollitia non perspiciatis. Atque blanditiis commodi dolores facere maiores.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum enim mollitia non perspiciatis. Atque blanditiis commodi dolores facere maiores.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum enim mollitia non perspiciatis. Atque blanditiis commodi dolores facere maiores.</p>
+        </div>
+      </app-modal>
+    </section>
+  </main>
+</div>

@@ -1,0 +1,15 @@
+<div class="modal" role="dialog" *ngIf="opened">
+  <div #dialog class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="modal-close" aria-label="Close" (click)="selfClose()">
+          &times;
+        </button>
+        <ng-content select=".modal-title"></ng-content>
+      </div>
+
+      <ng-content select=".modal-content"></ng-content>
+
+    </div>
+  </div>
+</div>
